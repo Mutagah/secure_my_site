@@ -17,6 +17,6 @@ Prerequisite
 
 #####   3.  With docker installed, paste the `docker pull mutagah/sample-docker-app1` command into your docker cli terminal.
 
-#####   4.  Run the docker image with the command  `docker run -d -p 8000:80 sample-docker-app:1.0` to create a docker container with the pulled docker image. Ensure your container is running by checking the logs using `docker logs sample-docker-app:1.0`
+#####   4.  Create a docker container with the pulled docker image using the command `docker run -d -p 8000:80 sample-docker-app:1.0`. Ensure your container is running by checking the logs using `docker logs sample-docker-app:1.0`
 
 #####   5.  Navigate to  ` localhost:8000 ` to access you web page data.
