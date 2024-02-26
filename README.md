@@ -1,22 +1,20 @@
 Program Name
 ---------------
-### dockerize_my_app
+### secure_my_site
 
 Program Description
 --------------------
-##### dockerize_my_app program seeks to demonstrate how a simple static web page can be compiled to a docker image
+##### secure_my_site program seeks to demonstrate how a simple static web page can be compiled to a docker image
 
 Program Setup Instructions
 ---------------------------
 Prerequisite
 ##### Install docker-desktop
 
-#####   1.  Go to docker hub and search for `mutagah/sample-docker-app1`
+#####   1.  First, clone [secure_my_site] and change the directory to the cloned folder using `cd secure_my_site`
 
-#####   2.  A docker pull command should be provided upon clicking of `mutagah/sample-docker-app1`
+#####   2.  In the parent directory of the program, run `docker build -t <build name of choice> .`
 
-#####   3.  With docker installed, paste the `docker pull mutagah/sample-docker-app1:0` command into your docker cli terminal.
+#####   3.  Run `docker run -d -p 9000:80 -p 9001:443 <your build name of choice>`
 
-#####   4.  Create a docker container with the pulled docker image using the command `docker run -d -p 8000:80 sample-docker-app1:0`. Ensure your container is running by checking the logs using `docker logs sample-docker-app1:0`
-
-#####   5.  Navigate to  ` localhost:8000 ` to access you web page data.
+#####   4.  Access the page served through: `http://localhost:9000/` and `https://localhost:9001/`
